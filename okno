@@ -1,0 +1,13 @@
+class MainWindow(QMainWindow):
+    g_map: QLabel
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        uic.loadUi('main_window.ui', self)
+        self.press_delta = 0.00001
+
+        self.map_zoom = 5
+        self.map_ll = [51.7676, 55.0965]
+        self.map_l = 'map'
+        self.map_key = ''
+        self.refresh_map()
