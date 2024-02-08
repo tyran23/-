@@ -1,0 +1,5 @@
+    def myMap(ymaps, center, controls, zoom):
+        ymaps.Map('map',
+                {center: [51.7676, 55.0965],
+                controls: ['typeSelector'],
+                zoom: 5})
