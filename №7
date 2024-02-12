@@ -3,11 +3,11 @@ import requests
 import pygame
 import os
 
-"При нажати на кнопку справа снизу, сбрасывается поиск"
+#При нажати на кнопку справа снизу, сбрасывается поиск
 
 
 class Button:
-    """Класс, который создаёт кнопки и пишет на них текст"""
+#Класс, который создаёт кнопки и пишет на них текст
 
     def create_button(self, surface, color, x, y, length, height, width, text, text_color):
         surface = self.draw_button(surface, color, length, height, x, y, width)
